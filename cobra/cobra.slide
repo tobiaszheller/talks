@@ -61,7 +61,7 @@ https://github.com/nephe
 		}
 	},
 
-* Flags local & persitent
+* Flags local & persistent
 
 .code demoapp/cmd/get.go /get/,
 
