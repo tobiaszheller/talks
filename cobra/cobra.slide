@@ -1,6 +1,7 @@
 Building cli tools with cobra
 
 Tobiasz Heller
+Ingrid
 https://github.com/nephe
 
 
@@ -9,6 +10,10 @@ https://github.com/nephe
 .link http://github.com/spf13/cobra github.com/spf13/cobra
 "Cobra is both a library for creating powerful modern CLI applications as well as a program to generate applications and command files."
 
+
+* When flag package is not enough?
+
+.code stdflag/main.go /main/,/^}/
 
 * Features
 - Easy subcommand-based CLIs:
@@ -73,7 +78,7 @@ https://github.com/nephe
 	$  go run main.go get --all=true --output=json
 	get called with all flag: true and json output
 
-* Get subcommand
+* Pods subcommand
 
 .code demoapp/cmd/pods.go /pods/,
 
@@ -87,7 +92,7 @@ https://github.com/nephe
 
 * Args
 
-	NoArgs(),MinimumNArgs(int),MaximumNArgs(int),ExactArgs(int)
+	MinimumNArgs(int),MaximumNArgs(int),ExactArgs(int)
 
 : 
 
@@ -98,6 +103,10 @@ https://github.com/nephe
 			fmt.Println(args[0])
 		},
 	}
+
+* Demo 
+
+* Conclusion
 
 * Who is using it
 
